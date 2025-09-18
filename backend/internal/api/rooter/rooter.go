@@ -35,5 +35,5 @@ func NewRouter() *mux.Router {
 	r.HandleFunc("/notifications/{id}", handlers.DeleteNotification).Methods("DELETE")
 	r.HandleFunc("/notifications/{id}/read", handlers.MarkNotificationAsRead).Methods("PATCH")
 
-    return router
+	return router
 }
